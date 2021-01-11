@@ -11,6 +11,7 @@ def load_library(path)
     library[key]["english"] = value[0]
     library[key]["japanese"] = value[1]
   end
+  library
 end
 
 puts load_library("./lib/emoticons.yml")
