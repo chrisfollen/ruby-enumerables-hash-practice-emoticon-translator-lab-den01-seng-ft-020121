@@ -8,8 +8,8 @@ def load_library(path)
   data = YAML.load_file(path)
   data.each do |key, value|
     library[key] = {}
-    library[key]["english"] = value[0]
-    library[key]["japanese"] = value[1]
+    library[key][:english] = value[0]
+    library[key][:japanese] = value[1]
   end
   library
 end
