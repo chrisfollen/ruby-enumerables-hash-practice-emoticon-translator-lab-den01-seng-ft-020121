@@ -22,7 +22,7 @@ end
 def get_english_meaning(path, emot_in)
   # code goes here
   data = load_library(path)
-  data.find 
+  data.find |
   
   
 end
