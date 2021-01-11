@@ -22,7 +22,14 @@ end
 def get_english_meaning(path, emot_in)
   # code goes here
   data = load_library(path)
-  data.find |
+  data.each do |key, value|
+    value.each do |lang, emot|
+      if emot == emot_in
+        return key
+      end
+    end
+  end
+  
   
   
 end
