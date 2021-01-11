@@ -14,12 +14,15 @@ def load_library(path)
   library
 end
 
-#puts load_library("./lib/emoticons.yml")
 
 def get_japanese_emoticon
   # code goes here
 end
 
-def get_english_meaning
+def get_english_meaning(path, emot_in)
   # code goes here
+  data = load_library(path)
+  data.find 
+  
+  
 end
